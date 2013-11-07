@@ -33,12 +33,12 @@ typedef enum {
 @property (nonatomic, retain) UIColor *descriptionTextColor;
 @property (nonatomic, retain) UIColor *anchorTextColor;
 @property (nonatomic, copy) NSString *fontFamily;
-@property (nonatomic) int headerTextSize;
+@property (nonatomic, assign) int headerTextSize;
 @property (nonatomic, retain) UIColor *borderColor;
-@property (nonatomic) GADSearchBorderType borderType;
-@property (nonatomic) int borderThickness;
+@property (nonatomic, assign) GADSearchBorderType borderType;
+@property (nonatomic, assign) int borderThickness;
 @property (nonatomic, copy) NSString *customChannels;
-@property (nonatomic) GADSearchCallButtonColor callButtonColor;
+@property (nonatomic, assign) GADSearchCallButtonColor callButtonColor;
 
 // The request object used to request ad. Pass the value returned by the method
 // to GADSearchBannerView to get the ad in the format specified.

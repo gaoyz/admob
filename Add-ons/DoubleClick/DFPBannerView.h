@@ -41,7 +41,7 @@
 @property (nonatomic, retain) NSArray *validAdSizes;
 
 // Flag allowing publisher to specify when the ad is visible to the user.
-@property (nonatomic) BOOL enableManualImpressions;
+@property (nonatomic, assign) BOOL enableManualImpressions;
 
 // Call this when the ad is visible and if you have set enableManualImpressions
 // to YES.

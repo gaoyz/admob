@@ -6,10 +6,9 @@
 //
 //  To add DFP extras to an ad request:
 //    DFPExtras *extras = [[[DFPExtras alloc] init] autorelease];
-//    extras.additionalParameters =
-//        [NSDictionary dictionaryWithObjectsAndKeys:
-//          @"value", @"key",
-//          nil];
+//    extras.additionalParameters = @{
+//      @"key" : @"value"
+//    };
 //    GADRequest *request = [GADRequest request];
 //    [request registerAdNetworkExtras:extras];
 //
@@ -18,6 +17,6 @@
 
 @interface DFPExtras : GADAdMobExtras
 
-@property (nonatomic, copy) NSString *publisherProvidedID;
+@property(nonatomic, copy) NSString *publisherProvidedID;
 
 @end
