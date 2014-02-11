@@ -25,20 +25,20 @@ typedef enum {
 // Specifies parameters and controls for search ads.
 @interface GADSearchRequest : NSObject
 
-@property (nonatomic, copy) NSString *query;
-@property (nonatomic, readonly) UIColor *backgroundColor;
-@property (nonatomic, readonly) UIColor *gradientFrom;
-@property (nonatomic, readonly) UIColor *gradientTo;
-@property (nonatomic, retain) UIColor *headerColor;
-@property (nonatomic, retain) UIColor *descriptionTextColor;
-@property (nonatomic, retain) UIColor *anchorTextColor;
-@property (nonatomic, copy) NSString *fontFamily;
-@property (nonatomic, assign) int headerTextSize;
-@property (nonatomic, retain) UIColor *borderColor;
-@property (nonatomic, assign) GADSearchBorderType borderType;
-@property (nonatomic, assign) int borderThickness;
-@property (nonatomic, copy) NSString *customChannels;
-@property (nonatomic, assign) GADSearchCallButtonColor callButtonColor;
+@property(nonatomic, copy) NSString *query;
+@property(nonatomic, readonly) UIColor *backgroundColor;
+@property(nonatomic, readonly) UIColor *gradientFrom;
+@property(nonatomic, readonly) UIColor *gradientTo;
+@property(nonatomic, retain) UIColor *headerColor;
+@property(nonatomic, retain) UIColor *descriptionTextColor;
+@property(nonatomic, retain) UIColor *anchorTextColor;
+@property(nonatomic, copy) NSString *fontFamily;
+@property(nonatomic, assign) int headerTextSize;
+@property(nonatomic, retain) UIColor *borderColor;
+@property(nonatomic, assign) GADSearchBorderType borderType;
+@property(nonatomic, assign) int borderThickness;
+@property(nonatomic, copy) NSString *customChannels;
+@property(nonatomic, assign) GADSearchCallButtonColor callButtonColor;
 
 // The request object used to request ad. Pass the value returned by the method
 // to GADSearchBannerView to get the ad in the format specified.
