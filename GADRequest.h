@@ -1,6 +1,6 @@
 //
 //  GADRequest.h
-//  Google AdMob Ads SDK
+//  Google Mobile Ads SDK
 //
 //  Copyright 2011 Google Inc. All rights reserved.
 //
@@ -107,6 +107,10 @@ typedef NS_ENUM(NSInteger, GADGender) {
 /// Convenience method for adding keywords one at a time such as @"Sports Scores" and then
 /// @"Football".
 - (void)addKeyword:(NSString *)keyword;
+
+/// URL string for a webpage whose content matches the app content. This webpage content is used for
+/// targeting purposes.
+@property(nonatomic, copy) NSString *contentURL;
 
 #pragma mark - Deprecated Methods
 

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = 'AdMob'
   s.platform = :ios, '4.3'
-  s.version = '6.9.2'
+  s.version = '6.9.3'
   s.summary = 'Google AdMob Ads SDK.'
   s.description = 'The Google AdMob Ads SDK allows developers to easily incorporate mobile-friendly text and image banners as well as rich, full-screen web apps known as interstitials.'
   s.homepage = 'https://github.com/gaoyz/admob'
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'libGoogleAdMobAds.a'
   s.source_files = '*.h', 'Add-ons/Search/*.h', 'Add-ons/Mediation/*.h', 'Add-ons/DoubleClick/*.h'
   s.library = 'GoogleAdMobAds'
-  s.frameworks = 'StoreKit', 'AudioToolbox', 'MessageUI', 'SystemConfiguration', 'CoreGraphics'
+  s.frameworks = 'StoreKit', 'AudioToolbox', 'AVFoundation', 'MessageUI', 'SystemConfiguration', 'CoreGraphics'
   s.weak_frameworks = 'AdSupport'
   s.xcconfig  =  { 'OTHER_LDFLAGS' => '-ObjC', 'LIBRARY_SEARCH_PATHS' => '"$(SRCROOT)/Pods/AdMob"' }
 end

@@ -1,9 +1,9 @@
-///
-///  GADCustomEventBannerDelegate.h
-///  Google AdMob Ads SDK
-///
-///  Copyright 2012 Google Inc. All rights reserved.
-///
+//
+//  GADCustomEventBannerDelegate.h
+//  Google Mobile Ads SDK
+//
+//  Copyright 2012 Google Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
 
