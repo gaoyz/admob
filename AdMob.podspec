@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'libGoogleAdMobAds.a'
   s.source_files = '*.h', 'Add-ons/Search/*.h', 'Add-ons/Mediation/*.h', 'Add-ons/DoubleClick/*.h'
   s.library = 'GoogleAdMobAds'
-  s.frameworks = 'StoreKit', 'AudioToolbox', 'AVFoundation', 'MessageUI', 'SystemConfiguration', 'CoreGraphics'
+  s.frameworks = 'StoreKit', 'AudioToolbox', 'AVFoundation', 'MessageUI', 'SystemConfiguration', 'CoreGraphics', 'EventKit', 'EventKitUI'
   s.weak_frameworks = 'AdSupport'
   s.xcconfig  =  { 'OTHER_LDFLAGS' => '-ObjC', 'LIBRARY_SEARCH_PATHS' => '"$(SRCROOT)/Pods/AdMob"' }
 end
