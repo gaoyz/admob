@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'GoogleMobileAds.framework'
   s.frameworks = 'StoreKit', 'AudioToolbox', 'AVFoundation', 'MessageUI', 'SystemConfiguration', 'CoreGraphics', 'EventKit', 'EventKitUI', 'GoogleMobileAds'
   s.weak_frameworks = 'AdSupport'
-  s.xcconfig  =  { 'OTHER_LDFLAGS' => '-ObjC', 'FRAMEWORK_SEARCH_PATHS' => '"$(SRCROOT)/Pods/AdMob"' }
+  s.xcconfig  =  {'FRAMEWORK_SEARCH_PATHS' => '"$(SRCROOT)/Pods/AdMob"'}
 end
